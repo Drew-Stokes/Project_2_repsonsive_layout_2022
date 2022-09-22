@@ -16,6 +16,7 @@ body {
 ul {
     list-style: none;
     padding-left: 0;
+    color: black;
 }
 
 a {
@@ -28,7 +29,7 @@ nav {
     font-family: "Roboto", Arial, Verdana;
     font-weight: 400;
     letter-spacing: .05em;
-    background-color: #829356;
+    background-color: #fafafa;
     padding: 25px;
   }
 
@@ -48,6 +49,11 @@ footer {
 
 .full {
   display: none;
+}
+
+img {
+  max-width: 50%;
+  
 }
 /*---- Class Selectors ----*/
   .top-nav, .top-nav li {
@@ -70,6 +76,7 @@ footer {
   
   .top-nav a {
     text-transform: uppercase;
+    color: black;
   }
 
   .container {
@@ -130,10 +137,6 @@ footer {
     .top-nav li:last-child {
       margin-right: 0;
     }
-  
-    .top-nav a {
-      color: #fff;
-    }
 
     .container {
       display: flex;
@@ -168,8 +171,28 @@ footer {
       width: initial;
       margin-bottom: 0;
     }
-
+    
+    .top-nav {
+      padding-right: .7em;
+    }
     .col {
       flex-basis: calc(33.333% - 20px);
+    }
+
+    .banner {
+      display: flex;
+      justify-content: space-between;
+      background-color: #fafafa;
+    }
+
+    .banner p {
+      padding-left: 25px;
+      width: 50%;
+      text-align: left;
+    }
+
+    .banner img {
+      padding-right: 2em;
+      padding-bottom: 4em;
     }
   }
